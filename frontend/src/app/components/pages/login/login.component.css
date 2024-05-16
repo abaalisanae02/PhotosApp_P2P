@@ -1,0 +1,41 @@
+.container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    margin-top: 3rem;
+}
+h1{
+    margin-bottom: 5rem;
+    color: blueviolet;
+    font:italic;
+}
+.details{
+    width:28rem;
+}
+input{
+    height: 1.5rem;
+    width: 50%;
+    margin-bottom: 0.8rem;
+
+}
+label{
+    margin-top: 15%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10rem;
+}
+button{
+    border-radius: 0.7rem;
+    background-color: blueviolet;
+    width: 5rem;
+    text-align: center;
+    height: 1.8rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    border:none;
+    color: aliceblue;
+}

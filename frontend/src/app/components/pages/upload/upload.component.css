@@ -1,0 +1,47 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    
+}
+input[type="text"]{
+    height: 1.5rem;
+    width: 50%;
+    margin-bottom: 0.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="file"] {
+    display:block;
+    text-align: center;
+    height: 2rem;
+    margin-top: 0.2rem;
+}
+h1{
+    margin-bottom: 5rem;
+    color: blueviolet;
+    font:italic;
+}
+
+button {
+    border-radius: 0.7rem;
+    background-color: blueviolet;
+    width: 6rem;
+    text-align: center;
+    height: 2rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    border:none;
+    color: aliceblue;
+}
+
+button:hover {
+    background-color: rgb(78, 8, 145);
+}

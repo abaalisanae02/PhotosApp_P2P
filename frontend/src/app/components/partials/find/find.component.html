@@ -1,0 +1,4 @@
+<div>
+    <input #s type="text" placeholder="Search photo" (keyup.enter)="find(s.value)" [value]="searchTerm"/>
+    <button (click)= "find(s.value)">Find</button>
+</div>

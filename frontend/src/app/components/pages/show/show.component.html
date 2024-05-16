@@ -1,0 +1,11 @@
+<app-find></app-find>
+<ul>
+    <li *ngFor="let image of images">
+        <a [routerLink]="'/image/' + image.id">
+            <img [src]="getImageUrl(image)" [alt]="image.name"/>
+                <div class="name">
+                    {{image.name}}
+                </div>
+        </a>
+    </li>
+</ul>

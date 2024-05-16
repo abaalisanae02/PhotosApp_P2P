@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Upload Photo</h1>
+    <form [formGroup]="uploadForm" (submit)="onSubmit()" >
+        <div class="form-group">
+            <div class="input-container">
+                <label for="photoname">Photo Name</label>
+                <div>
+                    <input type="text" id="photoname" formControlName="photoname">
+                </div>
+            </div>
+            <div>
+                <label for="photo">Select Photo</label>
+                <input type="file" id="photo" name="photo" (change)="onFileSelected($event)">
+            </div>
+        </div>
+        <button type="submit">Upload</button>
+    </form>
+</div>

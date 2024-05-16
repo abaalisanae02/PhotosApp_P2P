@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="details">
+       <h1>Login</h1> 
+        <form [formGroup]="loginForm" (ngSubmit)="submit()">
+            <div class="input-container">
+                <label>UserName</label>
+                <div>
+                    <input type="text" placeholder="username" formControlName="username">
+                </div>
+                <div class="error-list" *ngIf="fc['username'].errors && isSubmitted">
+                    <div *ngIf="fc['username'].errors['required']">Sould not be empty</div>
+                </div>
+            </div>
+            <div class="input-container">
+                <label>Password</label>
+                <div>
+                    <input type="password" placeholder="password" formControlName="password">
+                </div>
+                <div class="error-list" *ngIf="fc['password'].errors && isSubmitted">
+                    <div *ngIf="fc['password'].errors['required']">Sould not be empty</div>
+                </div>
+            </div>
+            <div>
+                <div class="button">
+                    <button type="submit">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
